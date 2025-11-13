@@ -1,0 +1,18 @@
+import java.io.StreamTokenizer;
+import java.util.Scanner;
+import java.util.StringTokenizer;
+
+public class tokenizerdemo {
+public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    String texte1 ="Bonjour les Etudiants ,bienvenue en java!";
+    StringTokenizer st1 =new StringTokenizer(texte1);
+    System.out.println("decoupage du texte en mots:");
+    while (st1.hasMoreTokens()) {
+        System.out.println(st1.nextToken());
+        
+    }
+    System.out.println(" le texte principale est :"+texte1);
+
+}
+}
