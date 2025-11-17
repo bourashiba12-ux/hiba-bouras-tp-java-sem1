@@ -1,27 +1,26 @@
-package debug;
-
 import java.util.Scanner;
-
-public class debugtpfinal {
+public class activite5 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Entrez une phrase : ");
-        String phrase = sc.nextLine();
-        int nbVoyelles = 1; 
-        String motPlusLong = "";
-         {
-           
-
-            if (mot.length() > motPlusLong.length()) {
-                motPlusLong = mot;
+        System.out.println("donner une phrase : ");
+        String ch = sc.nextLine();
+        int nbMots = 0;
+        int nbvoyelles = 0;
+        String ch1 = " ";
+        for (int i = 0; i < ch.length(); i++) {
+            char c = ch.charAt(i);
+            
+            if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' || c == 'y' || c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U' || c == 'Y') {
+                nbvoyelles++;
+            }
+            if (c == ' ') {
+                nbMots++;
             }
         }
-
-        System.out.println("Nombre de mots : " + mots.length);
-        System.out.println("Nombre de voyelles : " + nbVoyelles);
-        System.out.println("Mot le plus long : " + motPlusLong);
-
+        System.out.println("nbre de mots :" + (nbMots + 1));
+        System.out.println("nbre de voyelles :" + nbvoyelles);
         sc.close();
     }
+    
 }
     
